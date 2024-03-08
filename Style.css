@@ -1,0 +1,117 @@
+* {
+  margin: 0%;
+}
+body {
+  background-color: #5c8374;
+  text-align: center;
+}
+p {
+  font-size: 55px;
+  font-family: algerian;
+  margin-bottom: 5vh;
+}
+.container {
+  height: 60vh;
+  width: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.game {
+  width: 60vh;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block {
+  height: 18vh;
+  width: 18vh;
+  border-radius: 15px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+  font-size: 80px;
+  color: rgb(138, 18, 18);
+  background-color: #bbe2ec;
+}
+.restart {
+  margin-top: 20px;
+  font-size: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 18px;
+  padding: 10px;
+  position: relative;
+  top: 60vh;
+}
+.turn {
+  font-size: 40px;
+  margin-top: 20px;
+  color: whitesmoke;
+  position: relative;
+  top: 60vh;
+}
+.player1 {
+  display: none;
+}
+.player2 {
+  display: none;
+}
+.win {
+  height: 60vh;
+  width: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: black;
+  backdrop-filter: blur(10px);
+}
+.win,
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.winner {
+  display: none;
+}
+@media (max-width: 650px) {
+  .container {
+    height: 40vh;
+    width: 40vh;
+  }
+  .game {
+    width: 40vh;
+  }
+  .block {
+    height: 11vh;
+    width: 11vh;
+  }
+  .turn {
+    font-size: 30px;
+    margin-top: 0%;
+    top: 45vh;
+  }
+  .restart {
+    font-size: 20px;
+    top: 47vh;
+    margin-top: 0%;
+  }
+  .block {
+    font-size: 45px;
+  }
+  .win {
+    height: 40vh;
+    width: 40vh;
+    font-size: 40px;
+    /* left: auto; */
+  }
+  p {
+    font-size: 40px;
+  }
+}
