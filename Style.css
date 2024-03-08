@@ -82,28 +82,28 @@ p {
 }
 @media (max-width: 650px) {
   .container {
-    height: 40vh;
-    width: 40vh;
+    height: 45vh;
+    width: 45vh;
   }
   .game {
-    width: 40vh;
+    width: 45vh;
   }
   .block {
-    height: 11vh;
-    width: 11vh;
+    height: 13vh;
+    width: 13vh;
   }
   .turn {
-    font-size: 30px;
+    font-size: 40px;
     margin-top: 0%;
-    top: 45vh;
+    top: 50vh;
   }
   .restart {
-    font-size: 20px;
-    top: 47vh;
+    font-size: 30px;
+    top: 52vh;
     margin-top: 0%;
   }
   .block {
-    font-size: 45px;
+    font-size: 50px;
   }
   .win {
     height: 40vh;
@@ -112,6 +112,6 @@ p {
     /* left: auto; */
   }
   p {
-    font-size: 40px;
+    font-size: 50px;
   }
 }
