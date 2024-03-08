@@ -32,7 +32,9 @@ boxes.forEach((box) => {
     count++;
     box.disabled = true;
     winner();
-    draw();
+    if (!winner()) {
+      draw();
+    }
   });
 });
 const winner = () => {
@@ -52,9 +54,11 @@ const winner = () => {
           win.classList.remove("winner");
         }
         disable();
+        return true;
       }
     }
   }
+  return false;
 };
 const disable = () => {
   for (box of boxes) {
